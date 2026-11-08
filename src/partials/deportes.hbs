@@ -1,0 +1,31 @@
+
+<section class="deportes-section">
+  <h2>Ranking de Deportes</h2>
+  <p>Conoce diferentes disciplinas deportivas y sus requisitos.</p>
+
+  <div class="tabla-container">
+    <table class="tabla-deportes">
+      <thead>
+        <tr>
+          <th>Nombre del deporte</th>
+          <th>Descripción</th>
+          <th>¿Qué se requiere?</th>
+          <th>Ranking</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {{#each deportes}}
+        <tr>
+          <td>{{nombre}}</td>
+          <td>{{descripcion}}</td>
+          <td>{{requisitos}}</td>
+          <td>
+            <span class="ranking">{{ranking}} / 5</span>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

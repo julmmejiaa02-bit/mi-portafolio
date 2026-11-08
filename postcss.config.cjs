@@ -1,4 +1,3 @@
-
 const purgecss = require('@fullhuman/postcss-purgecss');
 
 module.exports = {
@@ -6,7 +5,8 @@ module.exports = {
     purgecss({
       content: [
         './index.html',
-        './src/**/*.{js,jsx,ts,tsx,html}'
+        './src/**/*.{js,jsx,ts,tsx,html}',
+        './src/**/*.hbs'
       ],
       safelist: []
     })
